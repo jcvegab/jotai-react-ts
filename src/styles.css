@@ -1,0 +1,39 @@
+.App {
+  margin: 0 5%;
+  padding: 0 auto;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.paginate-buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.pokemon-links {
+  border: 1px solid #000000;
+  border-radius: 8px;
+  margin: 40px 0;
+  padding: 20px;
+}
+
+.spinner {
+  border: 10px solid rgb(0, 0, 0, 0.1);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  border-left-color: #000000;
+  animation: spinner-animation 1s ease infinite;
+}
+
+@keyframes spinner-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
